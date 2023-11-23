@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "webpack": "^5.89.0"
+  },
+  "name": "coursetable-main",
+  "description": "��#\u0000 \u0000-\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development"
+  },
+  "author": "",
+  "license": "ISC"
+}

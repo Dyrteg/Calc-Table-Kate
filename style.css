@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: "Inter", "Inter", Sans-Serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background: #b5e7af;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+
+td {
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+}
+
+.tablehor {
+  max-width: 1156px;
+  margin: auto;
+}
+
+#table__body {
+  display: block;
+  overflow-y: scroll;
+  height: 400px;
+}
+
+#table__body td {
+  width: 165px;
+  height: 37px;
+}
+
+.table__header th {
+  width: 165px;
+  height: 53px;
+}
+
+
+.table__number {
+  background: #b5e7af;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+}
+
+.input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 120px;
+  color: #000000;
+}
+
+.checkbox-btn {
+  position: relative;
+  padding-top: 2px;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-btn label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ff0000;
+  /* transition: .2s linear; */
+}
+
+.checkbox-btn input:checked~.checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  top: 40%;
+  width: 10px;
+  height: 14px;
+  border: 2px solid #0ea021;
+  filter: drop-shadow(0px 0px 10px #0ea021);
+  border-width: 0 2.5px 2.5px 0;
+  transition: .2s linear;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.2);
+}
+
+/* Show the checkmark when checked */
+.checkbox-btn input:checked~.checkmark:after {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  animation: pulse 1s ease-in;
+}
+
+.checkbox-btn input:checked~.checkmark {
+  transform: rotate(45deg);
+  border: none;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1.6);
+  }
+}
+
+
+.photo {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  margin-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  margin-top: 126px;
+  font-family: "Inter", "Inter", Sans-Serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.form__field {
+  font-family: inherit;
+  border: none;
+  border-bottom: 0px;
+  outline: 0;
+  font-size: 17px;
+  color: #000;
+  background: transparent;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Стили для скролла */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media screen and (max-width: 390px) {
+
+  table {
+        min-width: 0px;
+  }
+
+  .tablehor {
+    overflow-x: scroll;
+    max-width: 370px;
+    margin: auto;
+  }
+
+  .table__header{
+    width: 1156px;
+  }
+
+  #table__body {
+    width: 1156px;
+    overflow-y: scroll;
+    overflow-x: visible;
+  }
+
+  .table__num, .table__neon, .table__width, .table__height, .table__money {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: rgb(49, 49, 49);
+  }
+
+}
+

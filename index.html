@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./dist/main.js" defer type="module"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="header">Просчет вывесок Для дизайнеров</h1>
+
+  <div class="tablehor">
+    <table class="table__header">
+      <tr>
+        <th class="table__num">Номер</th>
+        <th class="table__neon">Длина неона в мм</th>
+        <th class="table__segments">Количество сегментов</th>
+        <th class="table__width">Ширина в мм</th>
+        <th class="table__height">Высота в мм</th>
+        <th class="table__money">Цена</th>
+        <th class="table__street">Уличное исполнение</th>
+      </tr>
+    </table>
+    <table id="table__body">
+        <tr>
+          <td class="table__number">1</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">2</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">3</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">4</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">5</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">6</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">7</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">8</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">9</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">10</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">11</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__number">12</td>
+          <td class="table__dlina"><input class="length input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text" id="input-id"> </td>
+          <td class="table__segment"><input class="segments input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__wi"><input class="width input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="table__he"><input class="height input" onkeyup="this.value = this.value.replace(/[^\d]/g,''); " name="text" type="text"></td>
+          <td class="result"></td>
+          <td class="street">
+            <label class="checkbox-btn">
+              <label for="checkbox"></label>
+              <input id="checkbox" type="checkbox" class="applyDiscount">
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+</body>
+
+</html>
