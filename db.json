@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "number": "Неон",
+      "dlina": "1900",
+      "segment": "13",
+      "width": "690",
+      "height": "130",
+      "result": "4108.58",
+      "applyDiscount": true
+    },
+    {
+      "id": "2",
+      "number": "Вывеска",
+      "dlina": "1520",
+      "segment": "15",
+      "width": "900",
+      "height": "100",
+      "result": "4007.48",
+      "applyDiscount": true
+    },
+    {
+      "id": "3",
+      "number": "",
+      "dlina": "",
+      "segment": "",
+      "width": "",
+      "height": "",
+      "result": "",
+      "applyDiscount": false
+    },
+    {
+      "id": "4",
+      "number": "Автор",
+      "dlina": "",
+      "segment": "",
+      "width": "",
+      "height": "",
+      "result": "",
+      "applyDiscount": false
+    },
+    {
+      "id": "5",
+      "number": "Привет",
+      "dlina": "",
+      "segment": "",
+      "width": "",
+      "height": "",
+      "result": "",
+      "applyDiscount": false
+    },
+    {
+      "id": "6",
+      "number": "",
+      "dlina": "",
+      "segment": "",
+      "width": "",
+      "height": "",
+      "result": "",
+      "applyDiscount": false
+    },
+    {
+      "id": "1701018987728",
+      "number": "Ку",
+      "dlina": "",
+      "segment": "",
+      "width": "",
+      "height": "",
+      "result": "",
+      "applyDiscount": false
+    }
+  ]
+}

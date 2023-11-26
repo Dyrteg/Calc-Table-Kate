@@ -52,5 +52,6 @@ export const totalPrice = () => {
 
             // Обновляем отображение суммы в текущей строке
             resultElement.textContent = totalCost;
+            resultElement.setAttribute('data-price', totalCost);
         }
 }

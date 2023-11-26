@@ -22,6 +22,37 @@ td {
   border-width: 0 1px 1px 0;
 }
 
+.section__button {
+    max-width: 1156px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.button__add {
+  display: inline-flex;
+  padding: 8px 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 0px;
+  background: #B5E7AF;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.button__save {
+  display: inline-flex;
+  padding: 8px 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 0px;
+  background: #B5E7AF;
+  cursor: pointer;
+}
+
 .tablehor {
   max-width: 1156px;
   margin: auto;
@@ -42,7 +73,6 @@ td {
   width: 165px;
   height: 53px;
 }
-
 
 .table__number {
   background: #b5e7af;
